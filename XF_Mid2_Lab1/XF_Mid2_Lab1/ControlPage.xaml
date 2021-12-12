@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF_Mid2_Lab1.ControlPage">
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label x:Name="AddPage" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+
+        <StackLayout Margin="10" Padding="10" >
+            <Label  x:Name="Id" />
+            <Entry x:Name="Name" />
+            <Entry  x:Name="HomeNumber" />
+            <Entry  x:Name="City" />
+        </StackLayout>
+
+        <StackLayout Margin="10" Padding="10" Orientation="Horizontal">
+            <Button  x:Name="Update" Clicked="Update_Clicked" />
+            <Button  x:Name="Delete" Clicked="Delete_Clicked" />
+            <Button  x:Name="Cancel" Clicked="Cancel_Clicked" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
